@@ -4,11 +4,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
 import time
-import config
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Variables
-usernameStr = config.usernameStr
-passwordStr = config.passwordStr
+usernameStr = os.getenv('usernameStr')
+passwordStr = os.getenv('passwordStr')
 timeSlot = 13
 now = datetime.now()
 refreshTime = now.replace(hour=19, minute=0, second=0, microsecond=0)
