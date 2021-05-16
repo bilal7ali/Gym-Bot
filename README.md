@@ -1,6 +1,6 @@
 # Gym-Bot
 
-This program autobooks gym slots on the Crunch Fitness website
+This program autobooks workout slots on the Crunch Fitness website
 
 # How?
 
